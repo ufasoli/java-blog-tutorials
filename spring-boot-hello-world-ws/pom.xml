@@ -19,8 +19,10 @@
         <version>1.0.0.RC1</version>
     </parent>
 
-    <!-- Add typical dependencies for a web application -->
+
     <dependencies>
+
+        <!-- Add web support-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -31,6 +33,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <!-- Add metrics and stats-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+
 
         <!--
         Spring boot will create a default in-memory DataSource
