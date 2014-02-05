@@ -3,7 +3,6 @@ package com.ufasoli.tutorials.spring.boot.web.controllers;
 import com.ufasoli.tutorials.spring.boot.model.Book;
 import com.ufasoli.tutorials.spring.boot.repositories.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
