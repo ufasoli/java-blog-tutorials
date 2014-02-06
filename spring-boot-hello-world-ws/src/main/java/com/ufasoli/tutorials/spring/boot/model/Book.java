@@ -1,7 +1,9 @@
 package com.ufasoli.tutorials.spring.boot.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,13 +12,14 @@ import javax.persistence.Id;
  * Time: 11:02
  */
 @Entity
-public class Book {
+public class Book implements Serializable{
 
 
     @Id
     protected String isbn;
     protected String title;
     protected String author;
+    @Column(length = 2000)
     protected String description;
 
 

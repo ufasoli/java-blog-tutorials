@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.vaadin.spring.EnableVaadin;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,6 +20,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 // in the classpath and no datasource is defined
 @EnableAutoConfiguration
 @EnableJpaRepositories
+//@EnableVaadin
 public class HelloWorldApp {
 
     public static void main(String[] args) throws Exception {
