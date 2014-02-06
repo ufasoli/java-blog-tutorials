@@ -1,5 +1,6 @@
 package com.ufasoli.tutorials.spring.boot.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -17,6 +18,7 @@ public class Book {
     protected String isbn;
     protected String title;
     protected String author;
+    @Column(length = 2000)
     protected String description;
 
 
