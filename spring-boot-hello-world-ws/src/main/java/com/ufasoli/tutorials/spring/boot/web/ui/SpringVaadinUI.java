@@ -4,11 +4,15 @@ import com.google.gwt.thirdparty.guava.common.collect.Lists;
 import com.ufasoli.tutorials.spring.boot.model.Book;
 import com.ufasoli.tutorials.spring.boot.repositories.BookRepository;
 import com.vaadin.data.util.BeanItemContainer;
+import com.vaadin.navigator.Navigator;
 import com.vaadin.server.VaadinRequest;
+import com.vaadin.ui.MenuBar;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.UI;
+import com.vaadin.ui.VerticalLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.vaadin.spring.VaadinUI;
+import org.vaadin.spring.navigator.SpringViewProvider;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,22 +23,24 @@ import org.vaadin.spring.VaadinUI;
 @VaadinUI
 public class SpringVaadinUI extends UI {
 
+
     @Autowired
-    protected BookRepository bookRepository;
+    protected SpringViewProvider viewProvider;
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
-            getPage().setTitle("Vaadin UI");
-
-        BeanItemContainer<Book> books = new BeanItemContainer<Book>(Book.class);
-        books.addAll(Lists.newArrayList(bookRepository.findAll()));
 
 
-        Table tbl = new Table();
 
-        tbl.setContainerDataSource(books);
+        getPage().setTitle("Vaadin UI");
 
-        setContent(tbl);
+
+        Navigator navigator = new Navigator(this,this);
+        navigator.addProvider(viewProvider);
+
+        setNavigator(navigator);
+
+
 
     }
 }
