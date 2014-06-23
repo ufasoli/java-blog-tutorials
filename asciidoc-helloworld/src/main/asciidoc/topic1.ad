@@ -1,0 +1,27 @@
+= Topic 1
+
+== Intro
+
+This page describes some information related to topic1.
+
+Asciidoc is cool
+
+image::asciidoc-logo.png[Asciidoc logo]
+
+
+.Some syntax highlighting
+
+[source,java]
+----
+public class HelloWorld{
+
+   public static void main(String[] args){
+      System.out.println("Hello World");
+   }
+}
+----
+
+
+.An external link
+
+http://powerman.name/doc/asciidoc[Asciidoc cheatsheet, window="_blank"]

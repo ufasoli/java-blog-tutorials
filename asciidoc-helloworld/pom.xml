@@ -46,7 +46,7 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <sourceHighlighter>highlightjs</sourceHighlighter>
+                            <sourceHighlighter>coderay</sourceHighlighter>
                             <backend>html</backend>
                             <doctype>book</doctype>
 
@@ -58,6 +58,7 @@
                                 window="_blank"
                                 -->
                                 <linkattrs>true</linkattrs>
+
                             </attributes>
 
 

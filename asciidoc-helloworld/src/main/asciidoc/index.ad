@@ -1,1 +1,5 @@
 = Asciidoctor hello world
+:toc:
+
+
+include::topic1.ad[]
