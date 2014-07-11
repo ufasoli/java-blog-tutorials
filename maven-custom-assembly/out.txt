@@ -1,0 +1,7 @@
+Apache Maven 3.1.0 (893ca28a1da9d5f51ac03827af98bb730128f9f2; 2013-06-28 04:15:32+0200)
+Maven home: C:\dev\bin\maven
+Java version: 1.8.0_05, vendor: Oracle Corporation
+Java home: C:\dev\bin\jdks\current\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "dos"
+Terminate batch job (Y/N)? 
